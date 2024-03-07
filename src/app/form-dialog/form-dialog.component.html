@@ -1,0 +1,56 @@
+<div #formDialog class="container" (click)="tryClose($event)">
+  <div #content class="content">
+    <button class="close" (click)="close()"><lucide-icon name="X" [size]="20"></lucide-icon></button>
+    <p class="notification">Thanks for your interest in connecting with us about your concrete project! We've been experiencing a high number of project submissions, so please be patient, as it may take up to a week for us to be back in touch. We look forward to connecting with you to discuss your project.</p>
+    <form action="https://formsubmit.co/3e9141123713daf4393f5411e8ef52ee" method="POST">
+      <div>
+        <label class="required" for="firstName">First Name</label>
+        <input id="firstName" type="text" name="firstName" [formControl]="firstName" maxlength="20">
+      </div> 
+      <div>
+        <label class="required" for="lastName">Last Name</label>
+        <input id="lastName" type="text" name="lastName" [formControl]="lastName" maxlength="20">
+      </div>
+      <div class="grid-col-start">
+        <label class="required" for="email">Email</label>
+        <input id="email" type="text" name="email" placeholder="example@example.com" [formControl]="email" maxlength="40">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+          <div *ngIf="email.errors['required']">
+            Email is required.
+          </div>  
+          <div *ngIf="email.errors['email']">
+            Please enter a valid email. 
+          </div>                                               
+        </div> 
+      </div>
+      <div>
+        <label class="required" for="phoneNumber">Phone Number</label>
+        <input id="phoneNumber" type="text" name="phoneNumber" placeholder="(000) 000-0000" [formControl]="phoneNumber">
+      </div>
+      <div>
+        <label class="required" for="location">Your Project Location</label>
+        <input id="location" type="text" name="location" placeholder="Portland, ME" [formControl]="location">
+      </div>
+      <div>
+        <label for="projectType">Project Type</label>
+        <select id="projectType" name="projectType">
+          <option value="" disabled selected>-Please choose an option-</option>
+          <option value="stamped">Stamped Concrete Patio/Walkway</option>
+          <option value="broom finished">Broom Finished Concrete Patio/Walkway</option>
+          <option value="sidewalk">Sidewalk</option>
+          <option value="garage floor">Garage Floor</option>
+          <option value="basement">Basement Floor</option>
+          <option value="mono slab">Monolithic Slab</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="full-row">
+        <label class="required" for="description">Project Description</label>
+        <textarea id="description" name="description" [formControl]="description"></textarea>
+      </div>
+      <div class="btn-container full-row">
+        <button type="submit" [ngClass]="{disabled: isDisabled}" [disabled]="isDisabled">Submit Your Project For Review</button>
+      </div>
+    </form>
+  </div>
+</div>

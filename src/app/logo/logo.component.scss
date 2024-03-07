@@ -1,0 +1,33 @@
+.logo-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 40px;
+  width: 60px;
+  background-image: url(../../images/concrete-mixer-white.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+p {
+  width: 14ch;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+  margin: 6px 0;
+  position: relative;
+  &::before {
+    content: '';
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: 1px;
+  }
+}
+

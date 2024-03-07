@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+.card {
+  max-width: 800px;
+  margin: 24px 24px;
+  padding: 18px 1rem 18px 1rem;
+  text-align: center;
+  background-color: rgba(58, 58, 58, 0.25);
+  color: var(--text-primary-black);
+  border-radius: 2px;
+  & p {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}

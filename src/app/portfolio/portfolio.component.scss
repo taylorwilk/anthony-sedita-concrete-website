@@ -1,0 +1,13 @@
+.main-content {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.portfolio-grid {
+  padding: 82px 40px 24px 40px;
+  display: grid;
+  gap: 1.5rem 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}

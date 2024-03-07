@@ -1,0 +1,179 @@
+.content-img-1 {
+  background-color: lightblue;
+  background-image: url(../../images/wells-beach-house-majestic-ashler-finished-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 20px 370px;
+  margin-top: 0px;;
+}
+
+.content-img-2 {
+  background-image: url(../../images/anthony-holding-majestic-small.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 600px;
+  padding: 156px 20px 250px;
+  .p1 {
+    margin-bottom: 0 !important;
+  }
+}
+
+.button-holder {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 8px 8px 12px;
+  margin: 14px auto;
+  font-size: 14px;
+  color: white;
+  border: 1px solid var(--text-primary-light);
+  border-radius: 2px;
+  background-color: rgba(104, 104, 104, 0);
+  text-transform: uppercase;
+  transition: background-color 100ms ease-in-out, color 100ms ease-in-out, border-color 100ms ease-in-out;
+  &:active {
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: scale(.99);
+    box-shadow: inset 0 0px 5px 0px rgba(255, 255, 255, 0.4);
+  }
+  & .icon-chevron {
+    height: 22px;
+    padding-left: 5px;
+  }
+  & .icon-call {
+    height: 19px;
+    padding-left: 12px;
+    padding-right: 4px;
+  }
+}
+
+.card {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+  padding: 18px 1.5rem 18px 1.5rem;
+  text-align: center;
+  background-color: rgba(255,255,255,.75);
+  color: var(--text-primary-black);
+  border-radius: 2px;
+  & .p1 {
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+  }
+  & .p2 {
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+}
+
+hr {
+  border-color: black;
+}
+
+.grid-content-img {
+  display: grid;
+  padding: 40px 20px;
+  gap: 1rem 3rem;
+  grid-template-rows: 1fr 1fr;
+  p {
+    line-height: 24px;
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 16px
+  }
+}
+
+.img-container-1,
+.img-container-2 {
+  padding: 6px;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+  grid-row-start: 2;
+}
+
+.grid-img-1,
+.grid-img-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+}
+.grid-img-1 {
+  background-image: url(../../images/basement-power-trowel.jpeg)
+}
+.grid-img-2 {
+  background-image: url(../../images/round-stamped-majestic.jpg);
+  min-height: 400px;
+}
+
+.grid-content {
+  margin: auto;
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    cursor: pointer;
+    background-color: var(--background-dark);
+    border-color: var(--background-dark);
+    transition: border-color 50ms ease-in-out,
+                box-shadow 50ms ease-in-out,
+                transform 50ms ease-in-out;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .content-img-1 {
+    padding: 80px 20px 360px;
+  }
+
+  .content-img-2 {
+    background-image: url(../../images/anthony-holding-majestic.jpeg);
+    background-attachment: fixed;
+  }
+
+  .card {
+    padding: 18px 2rem 18px 2rem;
+    & .p1 {
+      font-size: 32px;
+    }
+    & .p2 {
+      font-size: 20px;
+    }
+  }
+
+  .button-holder {
+    padding-top: 12px;
+  }
+
+  .grid-content-img {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 72px 120px;
+    .img-container-1 {
+      grid-row-start: 1;
+      grid-column-start: 2;
+    }
+    .img-container-2 {
+      grid-row-start: 1;
+    }
+  }
+}

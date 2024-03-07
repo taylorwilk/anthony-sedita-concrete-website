@@ -1,0 +1,14 @@
+runtime: nodejs16
+
+instance_class: F2
+
+env_variables: 
+  BUCKET_NAME: "websites_bucket_1"
+
+handlers:
+- url: /
+  static_files: dist/anthony-sedita-concrete-website/index.html
+  upload: dist/anthony-sedita-concrete-website/index.html
+
+- url: /
+  static_dir: dist/anthony-sedita-concrete-website 

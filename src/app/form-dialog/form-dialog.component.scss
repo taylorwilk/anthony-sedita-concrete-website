@@ -1,0 +1,174 @@
+.container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid #888;
+  width: 95%;
+  border-radius: 2px;
+}
+
+lucid-icon {
+  height: 20px;
+}
+
+.close {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 0;
+  right: 0;
+  padding: 2px 0 0 0;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  &:hover {
+    cursor: pointer;
+    background-color: var(--input-border);
+    border-color: var(--input-border);
+    border-radius: 2px;
+  }
+}
+
+.notification {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 12px 8px;
+  background-color: rgb(252,248,226);
+  border: 1px solid rgb(250,235,205);
+  border-left-color: rgba(0,0,0,0.1);
+  border-left-width: 5px;
+  border-radius: 4px;
+  line-height: 26px;
+}
+
+form {
+  display: grid;
+  gap: 1.5rem 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+label {
+  font-weight: 500;
+}
+
+.required:after {
+  content: '*';
+  color: red;
+  padding-left: 2px;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  height: 42px;
+  color: var(--text-primary-dark);
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  background-color: var(--input-background);
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  &:hover {
+    border-color: var(--input-border-hover);
+    box-shadow: 0 0 5px var(--input-border-box-shadow);
+  }
+  &.ng-invalid.ng-touched {
+    background-color: rgba(253, 37, 37, 0.05);
+    border-color: rgba(255, 0, 0, 0.5)
+  }
+}
+
+textarea {
+  height: 100px;
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  & button {
+    height: 40px;
+    padding: 12px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    color: var(--text-primary-light);
+    border: 2px solid var(--btn-border-submit);
+    border-radius: 4px;
+    background-color: var(--btn-background-submit);
+    text-transform: uppercase;
+    transition: background-color 100ms ease-in-out, color 100ms ease-in-out, border-color 100ms ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--background-dark);
+      border-color: var(--background-dark);
+      color: var(--text-primary-light);
+      transition: border-color 50ms ease-in-out,
+                  box-shadow 50ms ease-in-out,
+                  color 50ms ease-in-out,
+                  transform 50ms ease-in-out;
+    }
+    &:active {
+      border-color: rgba(255, 255, 255, 0.3);
+      transform: scale(.99);
+      box-shadow: inset 0 0px 5px 0px rgba(255, 255, 255, 0.4);
+    }
+    &:disabled {
+      background-color: lightgrey;
+      border-color: transparent;
+      color: darkgray;
+      cursor: not-allowed; 
+    }
+  }
+}
+
+.grid-col-start {
+  grid-column: 1; 
+}
+
+@media screen and (min-width: 940px) {
+  .content {
+    width: 70%;
+    padding: 38px;
+  }
+
+  .close {
+    top: 8px;
+    right: 8px;
+  }
+
+  form {
+    display: grid;
+    gap: 1.5rem 4rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .full-row {
+    grid-column: span 2;
+    width: 100%
+  }
+}
+
+@media screen and (min-width: 1264px) {
+  .content {
+    width: 50%;
+  }
+}
