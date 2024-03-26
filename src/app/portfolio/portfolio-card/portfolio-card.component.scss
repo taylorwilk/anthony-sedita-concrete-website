@@ -1,0 +1,88 @@
+.carousel {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px;
+  background-color: white;
+}
+
+.carousel__image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel__track-container {
+  background: lightblue;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  transition: transform 400ms ease-in-out;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: 0;
+  z-index: 50;
+}
+
+.carousel__button--right {
+  right: 0;
+}
+
+.carousel__nav {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0, 0, 0, .5);
+  margin: 0 10px;
+  &.current-slide {
+    background: rgba(0, 0, 0, .95);
+  }
+  cursor: pointer;
+}
+
+.is-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .carousel {
+    height: 350px;
+    width: 350px;
+  }
+}

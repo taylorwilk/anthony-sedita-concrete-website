@@ -1,1 +1,21 @@
-<img [src]="imageSource" [alt]="alternateText">
+
+
+<div class="carousel">
+    <button class="carousel__button carousel__button--left is-hidden">
+        <lucide-icon name="chevron-left" class="icon-chevron" color="rgba(0,0,0,.5)" [size]="40"></lucide-icon>
+    </button>
+    <div class="carousel__track-container">
+        <ul class="carousel__track">
+            <li *ngFor="let image of imageSourceNames; index as i" [ngClass]="[i === 0 ? 'current-slide' : '']" class="carousel__slide">
+                <img class="carousel__image" [src]="image" [alt]="alternateText[i]">
+            </li>
+        </ul>
+    </div>
+    <button class="carousel__button carousel__button--right">
+        <lucide-icon name="chevron-right" class="icon-chevron" color="rgba(0,0,0,.5)" [size]="40"></lucide-icon>
+    </button>
+
+    <div class="carousel__nav">
+        <button *ngFor="let image of imageSourceNames; index as i" [ngClass]="[i === 0 ? 'current-slide' : '']" class="carousel__indicator"></button>
+    </div>
+</div>

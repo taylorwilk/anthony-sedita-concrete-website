@@ -1,0 +1,106 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-portfolio-grid',
+  templateUrl: './portfolio-grid.component.html',
+  styleUrls: ['./portfolio-grid.component.scss']
+})
+export class PortfolioGridComponent {
+
+  photoSources = [
+    [
+      [
+      'wells-beach-house-majestic-ashler-finished-1.jpeg',
+      'wells-beach-house-majestic-ashler-finished-2.jpeg',
+      'wells-beach-house-majestic-ashler-finished-3.jpeg',
+      'wells-beach-house-majestic-ashler-finished-5.jpeg',
+      'wells-beach-house-majestic-ashler-finished-6.jpeg'
+      ],
+      [
+        'wells-beach-house-majestic-ashler-finished-1',
+        'wells-beach-house-majestic-ashler-finished-2',
+        'wells-beach-house-majestic-ashler-finished-3',
+        'wells-beach-house-majestic-ashler-finished-5',
+        'wells-beach-house-majestic-ashler-finished-6'
+      ]
+    ],
+    [
+      [
+        'old-orchard-pool-broomed-1.jpg',
+        'old-orchard-pool-broomed-2.jpg',
+        'old-orchard-pool-broomed-3.jpg',
+        'old-orchard-pool-broomed-4.jpg',
+        'old-orchard-pool-broomed-5.jpg',
+      ],
+      [
+        'old-orchard-pool-broomed-1',
+        'old-orchard-pool-broomed-2',
+        'old-orchard-pool-broomed-3',
+        'old-orchard-pool-broomed-4',
+        'old-orchard-pool-broomed-5',
+      ]
+    ],
+    [
+      [
+        'majestic-sharp-black-white-1.jpeg',
+        'majestic-sharp-black-white-2.jpeg',
+        'majestic-sharp-black-white-3.jpeg',
+        'majestic-sharp-black-white-4.jpeg',
+        'majestic-sharp-black-white-5.jpeg',
+        'majestic-sharp-black-white-6.jpeg',
+        'majestic-sharp-black-white-7.jpeg',
+      ],
+      [
+        'majestic-sharp-black-white-1',
+        'majestic-sharp-black-white-2',
+        'majestic-sharp-black-white-3',
+        'majestic-sharp-black-white-4',
+        'majestic-sharp-black-white-5',
+        'majestic-sharp-black-white-6',
+        'majestic-sharp-black-white-7',
+      ],
+    ],
+    [
+      [
+        'round-circle-majestic-1.jpeg',
+        'round-circle-majestic-2.jpeg',
+        'round-circle-majestic-3.jpeg',
+        'round-circle-majestic-4.jpeg',
+        'round-circle-majestic-5.jpeg',
+        'round-circle-majestic-6.jpeg',
+        'round-circle-majestic-7.jpeg',
+        'round-circle-majestic-8.jpeg',
+        'round-circle-majestic-9.jpeg',
+      ],
+      [
+        'round-circle-majestic-1',
+        'round-circle-majestic-2',
+        'round-circle-majestic-3',
+        'round-circle-majestic-4',
+        'round-circle-majestic-5',
+        'round-circle-majestic-6',
+        'round-circle-majestic-7',
+        'round-circle-majestic-8',
+        'round-circle-majestic-9',
+      ],
+    ],
+    [
+      [
+        'falmouth-stamped-concrete-majestic-1.jpeg',
+        'falmouth-stamped-concrete-majestic-2.jpeg',
+        'falmouth-stamped-concrete-majestic-3.jpeg',
+        'falmouth-stamped-concrete-majestic-4.jpeg',
+        'falmouth-stamped-concrete-majestic-5.jpeg',
+        'falmouth-stamped-concrete-majestic-6.jpeg'
+      ],
+      [
+        'falmouth-stamped-concrete-majestic-1',
+        'falmouth-stamped-concrete-majestic-2',
+        'falmouth-stamped-concrete-majestic-3',
+        'falmouth-stamped-concrete-majestic-4',
+        'falmouth-stamped-concrete-majestic-5',
+        'falmouth-stamped-concrete-majestic-6',
+      ]
+    ],
+  ] 
+}

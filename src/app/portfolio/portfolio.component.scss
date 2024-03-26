@@ -1,13 +1,15 @@
 .main-content {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 84px;
 }
 
-.portfolio-grid {
-  padding: 82px 40px 24px 40px;
-  display: grid;
-  gap: 1.5rem 1.5rem;
-  grid-template-columns: 1fr 1fr 1fr;
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  color: black
 }
