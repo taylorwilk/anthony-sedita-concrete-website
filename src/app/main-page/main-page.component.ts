@@ -14,6 +14,6 @@ export class MainPageComponent {
   }
 
   onCall() {
-    window.open("tel:+12073189187");
+    window.open("tel:+1203321725");
   }
 }
