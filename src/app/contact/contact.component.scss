@@ -1,0 +1,49 @@
+.content {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.background {
+  background-image: url(../../assets/images/concrete-bg-3.png);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+p {
+  margin: 0;
+  font-size: 26px;
+  text-align: center;
+  a,
+  span {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      color: #0000EE; 
+      text-decoration: underline;
+      
+    }
+  }
+}
+
+.content-img-1 {
+  // background-image: url(../../assets/images/concrete-bg-1.png);
+  background-image: url(../../assets/images/concrete-bg-3.png);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 570px) {
+  .phone-break {
+    display: none;
+  }
+}

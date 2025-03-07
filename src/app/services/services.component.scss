@@ -1,3 +1,60 @@
 ul {
-  padding-top: 80px;
+  padding: 114px 60px 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.background {
+  background-image: url(../../assets/images/concrete-bg-3.png);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+}
+
+hr {
+  border-color: black;
+  margin: 6px 0 10px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    text-align: start;;
+    margin: 0 0 34px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.content-img-1 {
+  // background-image: url(../../assets/images/concrete-bg-1.png);
+  background-image: url(../../assets/images/concrete-bg-3.png);
+  background-repeat: repeat;
+  background-size: 1143px 728px;
+  background-position: center center;
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    padding: 114px 20px 0;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .narrow-hr {
+    max-width: 248px;
+  }
 }

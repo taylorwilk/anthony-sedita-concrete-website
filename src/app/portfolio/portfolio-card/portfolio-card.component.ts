@@ -24,7 +24,6 @@ export class PortfolioCardComponent implements OnInit, AfterViewInit {
   currentslide = 'current-slide';
 
   ngOnInit() {
-    console.log(this.imageSources)
     this.imageSources[0].forEach(imageSource => {
       this.imageSourceNames.push('assets/images/' + imageSource);
     });
