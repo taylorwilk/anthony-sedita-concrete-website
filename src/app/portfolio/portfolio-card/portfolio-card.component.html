@@ -7,7 +7,7 @@
     <div class="carousel__track-container">
         <ul class="carousel__track">
             <li *ngFor="let image of imageSourceNames; index as i" [ngClass]="[i === 0 ? 'current-slide' : '']" class="carousel__slide">
-                <img class="carousel__image" [src]="image" [alt]="alternateText[i]">
+                <img class="carousel__image" loading="lazy" [src]="image" [alt]="alternateText[i]">
             </li>
         </ul>
     </div>
