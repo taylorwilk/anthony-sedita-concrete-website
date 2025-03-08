@@ -35,7 +35,13 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  div {
+  .content {
     padding: 128px 20px 0;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .content {
+    height: auto;
   }
 }
