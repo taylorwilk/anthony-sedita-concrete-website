@@ -4,11 +4,11 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
       <ul id="nav-links">
-        <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
-        <li><a routerLink="/portfolio/grid" routerLinkActive="active" ariaCurrentWhenActive="page">Portfolio</a></li>
-        <li><a routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page">Services</a></li>
-        <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
-        <li><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a></li>
+        <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="onClick()">Home</a></li>
+        <li><a routerLink="/portfolio/grid" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="onClick()">Portfolio</a></li>
+        <li><a routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="onClick()">Services</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="onClick()">About</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="onClick()">Contact</a></li>
         <li>
           <a href="https://www.facebook.com/concretemaine">
               <img src="../../assets/images/icons8-facebook-40.png" alt="">

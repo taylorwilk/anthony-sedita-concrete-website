@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 
 export class NavBarComponent {
 
+  onClick() {
+    let navInput = document.getElementById("nav-toggle") as HTMLInputElement;
+    if (navInput) {
+      navInput.checked = false;
+    }
+  }
 }

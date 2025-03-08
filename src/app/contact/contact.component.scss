@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 16px;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .background {
@@ -23,11 +23,11 @@ p {
   text-align: center;
   a,
   span {
-    color: black;
+    color: #0000EE;
     cursor: pointer;
     text-decoration: none;
     &:hover {
-      color: #0000EE; 
+      color: #0000EE !important; 
       text-decoration: underline;
       
     }
@@ -35,7 +35,6 @@ p {
 }
 
 .content-img-1 {
-  // background-image: url(../../assets/images/concrete-bg-1.png);
   background-image: url(../../assets/images/concrete-bg-3.png);
   background-repeat: repeat;
   background-size: cover;
@@ -45,5 +44,12 @@ p {
 @media screen and (min-width: 570px) {
   .phone-break {
     display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  a,
+  span {
+    color: black !important;
   }
 }

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
-  onClick() {
+  onCall() {
     window.open("tel:+1203321725");
   }
 
